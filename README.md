@@ -1,2 +1,3 @@
-CORRINE LIN PORTFOLIO SITE
-A work in progress...
+***Portfolio Site***
+
+
