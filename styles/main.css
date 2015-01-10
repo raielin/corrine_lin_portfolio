@@ -1,0 +1,369 @@
+/* ==== CONTAINER ==== */
+
+.container {
+  font-family: 'Abel', sans-serif;
+  color: #000;
+}
+
+.container a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* ==== HEADER ==== */
+
+.head-nav-outer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 150;
+  background-color: #fff
+}
+
+.header {
+  padding: 20px 0 10px 0;
+  margin: 0;
+  text-align: center;
+
+  /*border: 2px solid gray;*/
+}
+
+.header h1 {
+  font-size: 48px;
+  padding: 0;
+  margin: 0;
+
+  /*border: 2px solid blue;*/
+}
+
+/* ==== NAV BAR ==== */
+
+.nav {
+  margin: 0;
+  padding: 10px 0 20px 0;
+  font-family: 'Abel', sans-serif;
+  border-top: 1px solid #ccc;
+
+
+  /*border: 2px solid red;*/
+}
+
+.nav ul {
+  padding: 10px 0px 10px 0px;
+  margin: 0;
+  text-align: center;
+}
+
+.nav li {
+  display: inline;
+  padding: 0px 70px 0px 70px;
+  margin: 0;
+  color: #000;
+  font-size: 17px;
+}
+
+.nav ul li a:hover {
+  color: #999;
+}
+
+/* ==== MAIN BODY ==== */
+
+.main-container {
+  position: absolute;
+  top: 170px;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+
+  /*border: 2px solid purple;*/
+}
+
+/* ==== MAIN BODY :: HOME ==== */
+
+.main-home {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+
+  /*border: 2px solid orange;*/
+}
+
+.home-bg {
+  position: relative;
+
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(175, 175, 175, 0),
+      rgba(30, 30, 30, 0.3),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url('https://s3.amazonaws.com/uploads.hipchat.com/39979/1226495/Aj8CW7XLyMddvgm/home_main_bw.jpg');
+
+  background-position:
+    left top,
+    left -100px;
+
+  background-repeat:
+    no-repeat,
+    no-repeat;
+
+  background-size:
+    100% 100%,
+    100% auto;
+
+  width: 100%;
+  padding: 370px 0 0 0;
+  margin: 0;
+  z-index: 99;
+
+  /*border: 2px solid yellow;*/
+  /*background-image: url('../assets/home_main_bw.jpg');*/
+  /*background-position: 0px -100px;*/
+}
+
+.tagline-text {
+  position: relative;
+  text-align: left;
+  padding: 0 0 1px 50px;
+  margin: 0 0 0 0;
+  font-size: 32px;
+  color: #fff;
+  z-index: 101;
+
+
+  /*border: 2px solid green;*/
+}
+
+/* ==== MAIN BODY :: PROJECTS ==== */
+
+.main-projects {
+/*  position: absolute;*/
+  padding: 150px 0 150px 0px;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  /*border-top: 1px solid #ccc;*/
+
+  /*border: 2px solid pink;*/
+}
+
+.project {
+  display: inline-block;
+/*  position: relative;*/
+  width: 300px;
+  height: 300px;
+  padding: 0;
+  margin: 30px 50px 30px 50px;
+
+  /*border: 2px solid #D834EA;*/
+}
+
+.outer-project {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  -moz-box-shadow: 3px 3px 10px 3px #ccc;
+  -webkit-box-shadow: 3px 3px 10px 3px #ccc;
+  box-shadow: 3px 3px 10px 3px #ccc;
+}
+
+.inner-project {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 110;
+}
+
+.project-img {
+  position: relative;
+  z-index: 111;
+  padding: 1px;
+  margin: 0;
+}
+
+.project-img p {
+  text-align: left;
+  padding: 260px 0 0 20px;
+  margin: 0;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* --- Projects 1-3 --- */
+
+#project1.inner-project {
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(175, 175, 175, 0),
+      rgba(30, 30, 30, 0.3),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url('https://s3.amazonaws.com/uploads.hipchat.com/39979/1226495/1BHhWlnSLmiWpRZ/proj1_anthro_bw.jpg');
+
+  background-repeat:
+    no-repeat,
+    no-repeat;
+
+  background-size:
+    100% 100%,
+    100% auto;
+
+  background-position:
+    0px 0px,
+    top left;
+}
+
+#project2.inner-project {
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(175, 175, 175, 0),
+      rgba(30, 30, 30, 0.3),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url('https://s3.amazonaws.com/uploads.hipchat.com/39979/1226495/KKGMLzOizNtPnXj/proj2_bobs_bw.jpg');
+
+  background-repeat:
+    no-repeat,
+    no-repeat;
+
+  background-size:
+    100% 100%,
+    auto 100%;
+
+  background-position:
+    0px 0px,
+    center right;
+}
+
+#project3.inner-project {
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(175, 175, 175, 0),
+      rgba(30, 30, 30, 0.3),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url('https://s3.amazonaws.com/uploads.hipchat.com/39979/1226495/PdBgP8RlAlEuBq1/proj3_map_bw.jpg');
+
+  background-repeat:
+    no-repeat,
+    no-repeat;
+
+  background-size:
+    100% 100%,
+    auto 100%;
+
+  background-position:
+    0px 0px,
+    center center;
+}
+
+/* --- Projects 1-3 :: HOVER --- */
+
+#project1.inner-project:hover {
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(175, 175, 175, 0),
+      rgba(30, 30, 30, 0.3),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url('https://s3.amazonaws.com/uploads.hipchat.com/39979/1226495/NLbwBmWte2y3A2g/proj1_anthro.jpg');
+
+  background-repeat:
+    no-repeat,
+    no-repeat;
+
+  background-size:
+    100% 100%,
+    100% auto;
+
+  background-position:
+    0px 0px,
+    top left;
+}
+
+#project2.inner-project:hover {
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(175, 175, 175, 0),
+      rgba(30, 30, 30, 0.3),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url('https://s3.amazonaws.com/uploads.hipchat.com/39979/1226495/OHIxqI9lDT4E3FX/proj2_bobs.jpg');
+
+  background-repeat:
+    no-repeat,
+    no-repeat;
+
+  background-size:
+    100% 100%,
+    auto 100%;
+
+  background-position:
+    0px 0px,
+    center right;
+}
+
+#project3.inner-project:hover {
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(175, 175, 175, 0),
+      rgba(30, 30, 30, 0.3),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url('https://s3.amazonaws.com/uploads.hipchat.com/39979/1226495/sP0I2pkUSlsCgyo/proj3_map.jpg');
+
+  background-repeat:
+    no-repeat,
+    no-repeat;
+
+  background-size:
+    100% 100%,
+    auto 100%;
+
+  background-position:
+    0px 0px,
+    center center;
+}
+
+
+/* ==== MAIN BODY :: PROFILE ==== */
+
+.main-profile {
+  width: 100%;
+  text-align: center;
+  padding: 100px 0 150px 0;
+  margin: 50px 0 0 0;
+
+  /*border: 2px solid teal;*/
+}
