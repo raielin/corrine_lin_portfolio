@@ -1,8 +1,20 @@
+body {
+  position: relative;
+  z-index: 0;
+  background-color: #fff;
+}
+
 /* ==== CONTAINER ==== */
 
 .container {
+  position: relative;
+  z-index: 1;
   font-family: 'Abel', sans-serif;
   color: #000;
+  background-color: #fff;
+  left: 0;
+  padding: 0;
+  width: 100%;
 }
 
 .container a {
@@ -18,19 +30,24 @@
   left: 0;
   width: 100%;
   z-index: 150;
-  background-color: #fff
+  background-color: #fff;
 }
 
 .header {
-  padding: 20px 0 10px 0;
+  padding: 50px 0px 50px 0;
   margin: 0;
-  text-align: center;
+  text-align: right;
+  background-image: url('https://s3.amazonaws.com/uploads.hipchat.com/39979/1226495/IuPExQ1u4om6PAK/CRL_Logo_bold.svg');
+  background-size: 120px;
+  background-repeat: no-repeat;
+  background-position: center top;
 
   /*border: 2px solid gray;*/
 }
 
 .header h1 {
-  font-size: 48px;
+  /*font-size: 48px;*/
+  font-size: 36px;
   padding: 0;
   margin: 0;
 
@@ -70,11 +87,12 @@
 /* ==== MAIN BODY ==== */
 
 .main-container {
-  position: absolute;
+  position: relative;
+  z-index: 50;
+  /*background-color: #fff;*/
   top: 170px;
   left: 0;
-  right: 0;
-  padding: 0;
+  padding: 0 0 200px 0;
   margin: 0;
   width: 100%;
 
@@ -107,7 +125,7 @@
 
   background-position:
     left top,
-    left -100px;
+    0px -100px;
 
   background-repeat:
     no-repeat,
@@ -117,10 +135,10 @@
     100% 100%,
     100% auto;
 
-  width: 100%;
+  width: 105%;
   padding: 370px 0 0 0;
   margin: 0;
-  z-index: 99;
+  /*z-index: 99;*/
 
   /*border: 2px solid yellow;*/
   /*background-image: url('../assets/home_main_bw.jpg');*/
@@ -134,7 +152,7 @@
   margin: 0 0 0 0;
   font-size: 32px;
   color: #fff;
-  z-index: 101;
+  /*z-index: 101;*/
 
 
   /*border: 2px solid green;*/
@@ -144,8 +162,8 @@
 
 .main-projects {
 /*  position: absolute;*/
-  padding: 150px 0 150px 0px;
-  margin: 0;
+  padding: 150px 0 0 0;
+  margin: 0 0 50px 0;
   width: 100%;
   height: auto;
   text-align: center;
@@ -154,10 +172,14 @@
   /*border: 2px solid pink;*/
 }
 
+.main-projects a {
+  border: 0px;
+}
+
 .project {
   display: inline-block;
 /*  position: relative;*/
-  width: 300px;
+  width: 500px;
   height: 300px;
   padding: 0;
   margin: 30px 50px 30px 50px;
@@ -184,12 +206,12 @@
   bottom: 0;
   margin: 0;
   padding: 0;
-  z-index: 110;
+/*  z-index: 110;*/
 }
 
 .project-img {
-  position: relative;
-  z-index: 111;
+/*  position: relative;*/
+/*  z-index: 111;*/
   padding: 1px;
   margin: 0;
 }
@@ -214,7 +236,7 @@
       rgba(30, 30, 30, 0.3),
       rgba(0, 0, 0, 0.7)
     ),
-    url('https://s3.amazonaws.com/uploads.hipchat.com/39979/1226495/1BHhWlnSLmiWpRZ/proj1_anthro_bw.jpg');
+    url('https://s3.amazonaws.com/uploads.hipchat.com/39979/1226495/RKZt28eMfLmvCJh/stopIn_bw.jpg');
 
   background-repeat:
     no-repeat,
@@ -239,7 +261,7 @@
       rgba(30, 30, 30, 0.3),
       rgba(0, 0, 0, 0.7)
     ),
-    url('https://s3.amazonaws.com/uploads.hipchat.com/39979/1226495/KKGMLzOizNtPnXj/proj2_bobs_bw.jpg');
+    url('https://s3.amazonaws.com/uploads.hipchat.com/39979/1226495/4hujIDqRD77yxJc/bobs_bw.jpg');
 
   background-repeat:
     no-repeat,
@@ -247,11 +269,11 @@
 
   background-size:
     100% 100%,
-    auto 100%;
+    100% 100%;
 
   background-position:
     0px 0px,
-    center right;
+    top left;
 }
 
 #project3.inner-project {
@@ -291,7 +313,7 @@
       rgba(30, 30, 30, 0.3),
       rgba(0, 0, 0, 0.7)
     ),
-    url('https://s3.amazonaws.com/uploads.hipchat.com/39979/1226495/NLbwBmWte2y3A2g/proj1_anthro.jpg');
+    url('https://s3.amazonaws.com/uploads.hipchat.com/39979/1226495/Bwrqefx2yFJGw5e/stopIn.png');
 
   background-repeat:
     no-repeat,
@@ -316,7 +338,7 @@
       rgba(30, 30, 30, 0.3),
       rgba(0, 0, 0, 0.7)
     ),
-    url('https://s3.amazonaws.com/uploads.hipchat.com/39979/1226495/OHIxqI9lDT4E3FX/proj2_bobs.jpg');
+    url('https://s3.amazonaws.com/uploads.hipchat.com/39979/1226495/c6Wgm7Ch7SYjDM1/bobs.png');
 
   background-repeat:
     no-repeat,
@@ -324,11 +346,11 @@
 
   background-size:
     100% 100%,
-    auto 100%;
+    100% 100%;
 
   background-position:
     0px 0px,
-    center right;
+    top left;
 }
 
 #project3.inner-project:hover {
@@ -361,9 +383,51 @@
 
 .main-profile {
   width: 100%;
-  text-align: center;
-  padding: 100px 0 150px 0;
-  margin: 50px 0 0 0;
+  text-align: left;
+  padding: 150px 0 0 0;
+  margin: 0;
 
   /*border: 2px solid teal;*/
 }
+
+.profile-img {
+  /*text-align: center;*/
+  float: left;
+  padding: 0;
+  margin: 0 50px 0 0;
+}
+
+.profile-img img {
+  height: 300px;
+  -moz-box-shadow: 3px 3px 10px 3px #ccc;
+  -webkit-box-shadow: 3px 3px 10px 3px #ccc;
+  box-shadow: 3px 3px 10px 3px #ccc;
+}
+
+.profile-text {
+  position: relative;
+  padding: 0 50px 0 0;
+  margin: 0 0 20px 0;
+}
+
+.profile-text p {
+  font-size: 16px;
+}
+
+.profile-text h2 {
+  font-size: 36px;
+  line-height: 8px;
+}
+
+.contact {
+  padding-top: 15px;
+}
+
+.contact h3 {
+  line-height: 8px;
+}
+
+.contact a:hover {
+  color: #999;
+}
+
